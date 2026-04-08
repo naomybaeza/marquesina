@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Marquesina | Portafolio JS | Kimberly Naomy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="marquee-container">
+  
+  <!-- Información fija: nombre, campus, proyecto -->
+  <div class="info-header">
+    <div class="student-data">
+      <span>✨ KIMBERLY NAOMY GARCIA BAEZA</span>
+      <span>📍 CAMPUS: TEXCOCO</span>
+    </div>
+    <div class="project-badge">
+      🚀 NOMBRE DEL PROYECTO: PORTAFOLIO JS
+    </div>
+  </div>
+
+  <!-- Título de la marquesina interactiva -->
+  <div class="marquee-title">
+    <div class="title-icon">🔄</div>
+    <h3>✦ MARQUESINA INTERACTIVA | PORTAFOLIO DE PROYECTOS JS ✦</h3>
+  </div>
+
+  <!-- ESCENARIO PRINCIPAL DE MARQUESINA -->
+  <div class="marquee-stage">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-content" id="marqueeContent">
+        <!-- Los items se generan dinámicamente con JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTROLES: pausa/reanudar, dirección, velocidad -->
+  <div class="marquee-controls">
+    <button class="control-btn" id="playPauseBtn" title="Pausar / Reanudar">⏸️</button>
+    <button class="control-btn" id="directionBtn" title="Cambiar dirección">🔄</button>
+    <div class="speed-slider">
+      <label>⚡ Velocidad</label>
+      <input type="range" id="speedRange" min="0.5" max="4" step="0.05" value="1.8">
+      <span id="speedVal" class="speed-value">1.8x</span>
+    </div>
+    <div class="status-text" id="directionStatus">→ Dirección: DERECHA →</div>
+  </div>
+  
+  <div class="footer-note">
+    🌟 Desplazamiento continuo · JavaScript dinámico · Proyectos destacados del portafolio JS
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
